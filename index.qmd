@@ -1,0 +1,24 @@
+---
+title: "ShellDoc Web"
+format:
+  html:
+    theme: darkly
+    toc: true
+---
+
+# ShellDoc Web
+
+Proyecto de documentación automática de sesiones Linux usando procesos e hilos en C.
+
+# Tecnologías usadas
+
+- Linux
+- C
+- fork()
+- pthread
+- Quarto
+- GitHub Pages
+
+# Objetivo
+
+Capturar sesiones Linux y convertirlas automáticamente en documentación web.

@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "ShellDoc Web\nProyecto de documentación automática de sesiones Linux usando procesos e hilos en C.\n\n\nTecnologías usadas\n\nLinux\nC\nfork()\npthread\nQuarto\nGitHub Pages\n\n\n\nObjetivo\nCapturar sesiones Linux y convertirlas automáticamente en documentación web."
+  }
+]
