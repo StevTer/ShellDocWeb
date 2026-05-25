@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Documentacion de Sesiones Linux con Quarto, Hilos y Procesos en C"
@@ -16,6 +17,7 @@ format:
       - brand
     css: styles.css
     toc: true
+
 
 
 
