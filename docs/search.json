@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "arquitectura.html",
+    "href": "arquitectura.html",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.\nEl sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web.\n\n\n\nUsuario ↓ Comando Linux ↓ fork() ↓ Proceso hijo ejecuta el comando ↓ pthread registra la información ↓ Generación de sesion.qmd ↓ Quarto render ↓ sesion.html\n\n\n\n\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+  },
+  {
+    "objectID": "arquitectura.html#descripción-general",
+    "href": "arquitectura.html#descripción-general",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.\nEl sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web."
+  },
+  {
+    "objectID": "arquitectura.html#flujo-del-sistema",
+    "href": "arquitectura.html#flujo-del-sistema",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "Usuario ↓ Comando Linux ↓ fork() ↓ Proceso hijo ejecuta el comando ↓ pthread registra la información ↓ Generación de sesion.qmd ↓ Quarto render ↓ sesion.html"
+  },
+  {
+    "objectID": "arquitectura.html#tecnologías-utilizadas",
+    "href": "arquitectura.html#tecnologías-utilizadas",
+    "title": "Arquitectura",
+    "section": "",
+    "text": "Lenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,10 +35,171 @@
     "text": "About this site"
   },
   {
+    "objectID": "evidencias.html",
+    "href": "evidencias.html",
+    "title": "Evidencias",
+    "section": "",
+    "text": "Durante la prueba del sistema se ejecutaron los siguientes comandos Linux:\nwhoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux\n\n\n\nEl sistema registró automáticamente:\n\nUsuario activo (whoami)\nDirectorio de trabajo (pwd)\nInformación del sistema operativo (uname -a)\nTiempo de actividad del sistema (uptime)\nEspacio disponible en disco (df -h)\nUso de memoria RAM y swap (free -h)\nArchivos del directorio (ls -la)\nProcesos activos (ps aux)\n\n\n\n\nLa sesión generada registró correctamente:\n\n8 comandos ejecutados.\nFecha y hora de cada ejecución.\nSalida completa de cada comando.\nResumen final de la sesión.\n\nPosteriormente, el sistema generó automáticamente el archivo sesion.qmd y su correspondiente página web sesion.html."
+  },
+  {
+    "objectID": "evidencias.html#comandos-ejecutados-durante-la-demostración",
+    "href": "evidencias.html#comandos-ejecutados-durante-la-demostración",
+    "title": "Evidencias",
+    "section": "",
+    "text": "Durante la prueba del sistema se ejecutaron los siguientes comandos Linux:\nwhoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux"
+  },
+  {
+    "objectID": "evidencias.html#información-capturada",
+    "href": "evidencias.html#información-capturada",
+    "title": "Evidencias",
+    "section": "",
+    "text": "El sistema registró automáticamente:\n\nUsuario activo (whoami)\nDirectorio de trabajo (pwd)\nInformación del sistema operativo (uname -a)\nTiempo de actividad del sistema (uptime)\nEspacio disponible en disco (df -h)\nUso de memoria RAM y swap (free -h)\nArchivos del directorio (ls -la)\nProcesos activos (ps aux)"
+  },
+  {
+    "objectID": "evidencias.html#resultado-de-la-demostración",
+    "href": "evidencias.html#resultado-de-la-demostración",
+    "title": "Evidencias",
+    "section": "",
+    "text": "La sesión generada registró correctamente:\n\n8 comandos ejecutados.\nFecha y hora de cada ejecución.\nSalida completa de cada comando.\nResumen final de la sesión.\n\nPosteriormente, el sistema generó automáticamente el archivo sesion.qmd y su correspondiente página web sesion.html."
+  },
+  {
+    "objectID": "evidencias.html#compilación-del-proyecto",
+    "href": "evidencias.html#compilación-del-proyecto",
+    "title": "Evidencias",
+    "section": "Compilación del Proyecto",
+    "text": "Compilación del Proyecto"
+  },
+  {
+    "objectID": "evidencias.html#ejecución-del-sistema",
+    "href": "evidencias.html#ejecución-del-sistema",
+    "title": "Evidencias",
+    "section": "Ejecución del Sistema",
+    "text": "Ejecución del Sistema"
+  },
+  {
+    "objectID": "evidencias.html#generación-del-documento-html",
+    "href": "evidencias.html#generación-del-documento-html",
+    "title": "Evidencias",
+    "section": "Generación del Documento HTML",
+    "text": "Generación del Documento HTML"
+  },
+  {
+    "objectID": "evidencias.html#sitio-web-generado",
+    "href": "evidencias.html#sitio-web-generado",
+    "title": "Evidencias",
+    "section": "Sitio Web Generado",
+    "text": "Sitio Web Generado"
+  },
+  {
+    "objectID": "codigo/sesion.html",
+    "href": "codigo/sesion.html",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Documento generado automaticamente por el sistema ShellDoc.\n\n\n\nFecha y hora: 2026-05-30 21:06:37\n$ whoami\nResultado obtenido:\nsteven\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:40\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:44\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:46\n$ uptime\nResultado obtenido:\n 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-1",
+    "href": "codigo/sesion.html#comando-1",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-30 21:06:37\n$ whoami\nResultado obtenido:\nsteven"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-2",
+    "href": "codigo/sesion.html#comando-2",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-30 21:06:40\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-3",
+    "href": "codigo/sesion.html#comando-3",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-30 21:06:44\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-4",
+    "href": "codigo/sesion.html#comando-4",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-30 21:06:46\n$ uptime\nResultado obtenido:\n 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ShellDoc Web",
     "section": "",
-    "text": "ShellDoc Web\nProyecto de documentación automática de sesiones Linux usando procesos e hilos en C.\n\n\nTecnologías usadas\n\nLinux\nC\nfork()\npthread\nQuarto\nGitHub Pages\n\n\n\nObjetivo\nCapturar sesiones Linux y convertirlas automáticamente en documentación web."
+    "text": "Karen Grefa\nSteven Arauz\nGeovanni Casa\n\n\n\n\nShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto.\n\n\n\nAutomatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática.\n\n\n\n\nLinux\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages\n\n\n\n\n\nEjecución de comandos Linux.\nCaptura automática de resultados.\nProcesamiento concurrente mediante hilos.\nGeneración de archivos .qmd.\nConversión automática a HTML.\nPublicación web mediante GitHub Pages.\n\n\n\n\nUtilice el menú superior para acceder a:\n\nArquitectura\nEvidencias\nResultados\nSesión Generada"
+  },
+  {
+    "objectID": "index.html#integrantes",
+    "href": "index.html#integrantes",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "Karen Grefa\nSteven Arauz\nGeovanni Casa"
+  },
+  {
+    "objectID": "index.html#descripción",
+    "href": "index.html#descripción",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "ShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto."
+  },
+  {
+    "objectID": "index.html#objetivo-general",
+    "href": "index.html#objetivo-general",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "Automatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática."
+  },
+  {
+    "objectID": "index.html#tecnologías-utilizadas",
+    "href": "index.html#tecnologías-utilizadas",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "Linux\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+  },
+  {
+    "objectID": "index.html#funcionalidades",
+    "href": "index.html#funcionalidades",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "Ejecución de comandos Linux.\nCaptura automática de resultados.\nProcesamiento concurrente mediante hilos.\nGeneración de archivos .qmd.\nConversión automática a HTML.\nPublicación web mediante GitHub Pages."
+  },
+  {
+    "objectID": "index.html#navegación",
+    "href": "index.html#navegación",
+    "title": "ShellDoc Web",
+    "section": "",
+    "text": "Utilice el menú superior para acceder a:\n\nArquitectura\nEvidencias\nResultados\nSesión Generada"
+  },
+  {
+    "objectID": "resultados.html",
+    "href": "resultados.html",
+    "title": "Resultados",
+    "section": "",
+    "text": "La demostración final registró:\n\n8 comandos Linux ejecutados.\nFecha y hora de cada comando.\nSalida completa de cada ejecución.\nGeneración automática de documentación.\nConversión automática a HTML mediante Quarto.\n\n\n\n\n\nwhoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux\n\n\n\n\nEl sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos."
+  },
+  {
+    "objectID": "resultados.html#resumen-de-la-sesión-generada",
+    "href": "resultados.html#resumen-de-la-sesión-generada",
+    "title": "Resultados",
+    "section": "",
+    "text": "La demostración final registró:\n\n8 comandos Linux ejecutados.\nFecha y hora de cada comando.\nSalida completa de cada ejecución.\nGeneración automática de documentación.\nConversión automática a HTML mediante Quarto."
+  },
+  {
+    "objectID": "resultados.html#comandos-registrados",
+    "href": "resultados.html#comandos-registrados",
+    "title": "Resultados",
+    "section": "",
+    "text": "whoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux"
+  },
+  {
+    "objectID": "resultados.html#conclusión",
+    "href": "resultados.html#conclusión",
+    "title": "Resultados",
+    "section": "",
+    "text": "El sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos."
   }
 ]

@@ -1,24 +1,47 @@
 ---
 title: "ShellDoc Web"
-format:
-  html:
-    theme: darkly
-    toc: true
 ---
 
 # ShellDoc Web
 
-Proyecto de documentación automática de sesiones Linux usando procesos e hilos en C.
+## Integrantes
 
-# Tecnologías usadas
+- Karen Grefa
+- Steven Arauz
+- Geovanni Casa
+
+## Descripción
+
+ShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (`fork()`), hilos (`pthread`) y generación de documentación con Quarto.
+
+## Objetivo General
+
+Automatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática.
+
+## Tecnologías Utilizadas
 
 - Linux
-- C
+- Lenguaje C
 - fork()
 - pthread
+- Mutex
 - Quarto
 - GitHub Pages
 
-# Objetivo
+## Funcionalidades
 
-Capturar sesiones Linux y convertirlas automáticamente en documentación web.
+- Ejecución de comandos Linux.
+- Captura automática de resultados.
+- Procesamiento concurrente mediante hilos.
+- Generación de archivos `.qmd`.
+- Conversión automática a HTML.
+- Publicación web mediante GitHub Pages.
+
+## Navegación
+
+Utilice el menú superior para acceder a:
+
+- Arquitectura
+- Evidencias
+- Resultados
+- Sesión Generada

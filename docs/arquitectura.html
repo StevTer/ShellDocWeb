@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Documentacion de Sesiones Linux con Quarto, Hilos y Procesos en C</title>
+<title>Arquitectura – Documentacion de Sesiones Linux con Quarto, Hilos y Procesos en C</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./arquitectura.html"> 
+    <a class="nav-link active" href="./arquitectura.html" aria-current="page"> 
 <span class="menu-text">Arquitectura</span></a>
   </li>  
   <li class="nav-item">
@@ -120,15 +120,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#arquitectura-del-sistema" id="toc-arquitectura-del-sistema" class="nav-link active" data-scroll-target="#arquitectura-del-sistema">Arquitectura del Sistema</a>
+  <ul class="collapse">
+  <li><a href="#descripción-general" id="toc-descripción-general" class="nav-link" data-scroll-target="#descripción-general">Descripción General</a></li>
+  <li><a href="#flujo-del-sistema" id="toc-flujo-del-sistema" class="nav-link" data-scroll-target="#flujo-del-sistema">Flujo del Sistema</a></li>
+  <li><a href="#tecnologías-utilizadas" id="toc-tecnologías-utilizadas" class="nav-link" data-scroll-target="#tecnologías-utilizadas">Tecnologías Utilizadas</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Arquitectura</h1>
 </div>
 
 
@@ -145,9 +156,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="arquitectura-del-sistema" class="level1">
+<h1>Arquitectura del Sistema</h1>
+<section id="descripción-general" class="level2">
+<h2 class="anchored" data-anchor-id="descripción-general">Descripción General</h2>
+<p>ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.</p>
+<p>El sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web.</p>
+</section>
+<section id="flujo-del-sistema" class="level2">
+<h2 class="anchored" data-anchor-id="flujo-del-sistema">Flujo del Sistema</h2>
+<p>Usuario ↓ Comando Linux ↓ fork() ↓ Proceso hijo ejecuta el comando ↓ pthread registra la información ↓ Generación de sesion.qmd ↓ Quarto render ↓ sesion.html</p>
+</section>
+<section id="tecnologías-utilizadas" class="level2">
+<h2 class="anchored" data-anchor-id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
+<ul>
+<li>Lenguaje C</li>
+<li>fork()</li>
+<li>pthread</li>
+<li>Mutex</li>
+<li>Quarto</li>
+<li>GitHub Pages</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

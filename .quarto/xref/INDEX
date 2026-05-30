@@ -4,5 +4,17 @@
   },
   "about.qmd": {
     "about.html": "bdbd2b10"
+  },
+  "codigo/sesion.qmd": {
+    "sesion.html": "340ad277"
+  },
+  "evidencias.qmd": {
+    "evidencias.html": "279b4a07"
+  },
+  "resultados.qmd": {
+    "resultados.html": "85bf5a41"
+  },
+  "arquitectura.qmd": {
+    "arquitectura.html": "993c90e7"
   }
 }

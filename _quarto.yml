@@ -4,11 +4,23 @@ project:
 
 website:
   title: "Documentacion de Sesiones Linux con Quarto, Hilos y Procesos en C"
+
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Inicio
+
+      - href: arquitectura.qmd
+        text: Arquitectura
+
+      - href: evidencias.qmd
+        text: Evidencias
+
+      - href: resultados.qmd
+        text: Resultados
+
+      - href: codigo/sesion.html
+        text: Sesión Generada
 
 format:
   html:
@@ -17,7 +29,6 @@ format:
       - brand
     css: styles.css
     toc: true
-
 
 
 

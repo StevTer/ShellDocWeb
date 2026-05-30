@@ -1,0 +1,30 @@
+---
+title: "Resultados"
+---
+
+# Resultados Obtenidos
+
+## Resumen de la Sesión Generada
+
+La demostración final registró:
+
+- 8 comandos Linux ejecutados.
+- Fecha y hora de cada comando.
+- Salida completa de cada ejecución.
+- Generación automática de documentación.
+- Conversión automática a HTML mediante Quarto.
+
+## Comandos Registrados
+
+- whoami
+- pwd
+- uname -a
+- uptime
+- df -h
+- free -h
+- ls -la
+- ps aux
+
+## Conclusión
+
+El sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos.

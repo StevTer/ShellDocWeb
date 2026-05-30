@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8c0be6d389187907c38c2231351703ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-c5ddfa195c3e7c11f96816e5ee9d734d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,11 +91,23 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="./arquitectura.html"> 
+<span class="menu-text">Arquitectura</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./evidencias.html"> 
+<span class="menu-text">Evidencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resultados.html"> 
+<span class="menu-text">Resultados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./codigo/sesion.html"> 
+<span class="menu-text">Sesión Generada</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -113,9 +125,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#shelldoc-web" id="toc-shelldoc-web" class="nav-link active" data-scroll-target="#shelldoc-web">ShellDoc Web</a></li>
-  <li><a href="#tecnologías-usadas" id="toc-tecnologías-usadas" class="nav-link" data-scroll-target="#tecnologías-usadas">Tecnologías usadas</a></li>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#shelldoc-web" id="toc-shelldoc-web" class="nav-link active" data-scroll-target="#shelldoc-web">ShellDoc Web</a>
+  <ul class="collapse">
+  <li><a href="#integrantes" id="toc-integrantes" class="nav-link" data-scroll-target="#integrantes">Integrantes</a></li>
+  <li><a href="#descripción" id="toc-descripción" class="nav-link" data-scroll-target="#descripción">Descripción</a></li>
+  <li><a href="#objetivo-general" id="toc-objetivo-general" class="nav-link" data-scroll-target="#objetivo-general">Objetivo General</a></li>
+  <li><a href="#tecnologías-utilizadas" id="toc-tecnologías-utilizadas" class="nav-link" data-scroll-target="#tecnologías-utilizadas">Tecnologías Utilizadas</a></li>
+  <li><a href="#funcionalidades" id="toc-funcionalidades" class="nav-link" data-scroll-target="#funcionalidades">Funcionalidades</a></li>
+  <li><a href="#navegación" id="toc-navegación" class="nav-link" data-scroll-target="#navegación">Navegación</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -143,24 +161,57 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="shelldoc-web" class="level1">
 <h1>ShellDoc Web</h1>
-<p>Proyecto de documentación automática de sesiones Linux usando procesos e hilos en C.</p>
+<section id="integrantes" class="level2">
+<h2 class="anchored" data-anchor-id="integrantes">Integrantes</h2>
+<ul>
+<li>Karen Grefa</li>
+<li>Steven Arauz</li>
+<li>Geovanni Casa</li>
+</ul>
 </section>
-<section id="tecnologías-usadas" class="level1">
-<h1>Tecnologías usadas</h1>
+<section id="descripción" class="level2">
+<h2 class="anchored" data-anchor-id="descripción">Descripción</h2>
+<p>ShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (<code>fork()</code>), hilos (<code>pthread</code>) y generación de documentación con Quarto.</p>
+</section>
+<section id="objetivo-general" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-general">Objetivo General</h2>
+<p>Automatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática.</p>
+</section>
+<section id="tecnologías-utilizadas" class="level2">
+<h2 class="anchored" data-anchor-id="tecnologías-utilizadas">Tecnologías Utilizadas</h2>
 <ul>
 <li>Linux</li>
-<li>C</li>
+<li>Lenguaje C</li>
 <li>fork()</li>
 <li>pthread</li>
+<li>Mutex</li>
 <li>Quarto</li>
 <li>GitHub Pages</li>
 </ul>
 </section>
-<section id="objetivo" class="level1">
-<h1>Objetivo</h1>
-<p>Capturar sesiones Linux y convertirlas automáticamente en documentación web.</p>
+<section id="funcionalidades" class="level2">
+<h2 class="anchored" data-anchor-id="funcionalidades">Funcionalidades</h2>
+<ul>
+<li>Ejecución de comandos Linux.</li>
+<li>Captura automática de resultados.</li>
+<li>Procesamiento concurrente mediante hilos.</li>
+<li>Generación de archivos <code>.qmd</code>.</li>
+<li>Conversión automática a HTML.</li>
+<li>Publicación web mediante GitHub Pages.</li>
+</ul>
+</section>
+<section id="navegación" class="level2">
+<h2 class="anchored" data-anchor-id="navegación">Navegación</h2>
+<p>Utilice el menú superior para acceder a:</p>
+<ul>
+<li>Arquitectura</li>
+<li>Evidencias</li>
+<li>Resultados</li>
+<li>Sesión Generada</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

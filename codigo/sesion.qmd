@@ -1,0 +1,86 @@
+---
+title: "Documentacion de Sesion Linux"
+author: "Karen Grefa, Steven Arauz, Geovanni Casa"
+date: "2026-05-30 21:06:33"
+format: html
+---
+
+# Registro de Sesion Linux
+
+Documento generado automaticamente por el sistema ShellDoc.
+
+---
+
+## Comando 1
+
+**Fecha y hora:** 2026-05-30 21:06:37
+
+```bash
+$ whoami
+```
+
+**Resultado obtenido:**
+
+```
+steven
+
+```
+
+---
+
+## Comando 2
+
+**Fecha y hora:** 2026-05-30 21:06:40
+
+```bash
+$ pwd
+```
+
+**Resultado obtenido:**
+
+```
+/home/steven/ShellDocWeb/codigo
+
+```
+
+---
+
+## Comando 3
+
+**Fecha y hora:** 2026-05-30 21:06:44
+
+```bash
+$ uname -a
+```
+
+**Resultado obtenido:**
+
+```
+Linux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+```
+
+---
+
+## Comando 4
+
+**Fecha y hora:** 2026-05-30 21:06:46
+
+```bash
+$ uptime
+```
+
+**Resultado obtenido:**
+
+```
+ 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00
+
+```
+
+---
+
+# Resumen de la sesion
+
+- Fecha de cierre: 2026-05-30 21:06:47
+- Total de comandos ejecutados: **4**
+
