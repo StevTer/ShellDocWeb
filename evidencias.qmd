@@ -60,4 +60,5 @@ Posteriormente, el sistema generó automáticamente el archivo `sesion.qmd` y su
 ## Sitio Web Generado
 
 ![](capturas/sitio_generado.png)
+
 ![](capturas/sesion.png)
