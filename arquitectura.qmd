@@ -2,37 +2,26 @@
 title: "Arquitectura"
 ---
 
-# Arquitectura del Sistema
+## Arquitectura del Sistema
 
-## Descripción General
-
-ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.
-
-El sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web.
+La arquitectura del sistema está compuesta por un conjunto de procesos, hilos y herramientas de documentación que permiten capturar comandos Linux y transformarlos en documentación web automática.
 
 ## Flujo del Sistema
 
 Usuario
-↓
-Comando Linux
-↓
-fork()
-↓
-Proceso hijo ejecuta el comando
-↓
-pthread registra la información
-↓
-Generación de sesion.qmd
-↓
-Quarto render
-↓
-sesion.html
+→ Terminal Linux
+→ ShellDoc.c
+→ fork()
+→ Proceso hijo
+→ execl()
+→ Ejecución del comando
+→ pipe() + dup2()
+→ Captura de salida
+→ pthread
+→ sesion.qmd
+→ Quarto Render
+→ sesion.html
+→ GitHub Pages
+→ Página Web
 
-## Tecnologías Utilizadas
 
-- Lenguaje C
-- fork()
-- pthread
-- Mutex
-- Quarto
-- GitHub Pages

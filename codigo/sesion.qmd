@@ -1,7 +1,7 @@
 ---
 title: "Documentacion de Sesion Linux"
 author: "Karen Grefa, Steven Arauz, Geovanni Casa"
-date: "2026-05-30 21:06:33"
+date: "2026-05-31 01:28:12"
 format: html
 ---
 
@@ -13,7 +13,7 @@ Documento generado automaticamente por el sistema ShellDoc.
 
 ## Comando 1
 
-**Fecha y hora:** 2026-05-30 21:06:37
+**Fecha y hora:** 2026-05-31 01:28:19
 
 ```bash
 $ whoami
@@ -30,7 +30,7 @@ steven
 
 ## Comando 2
 
-**Fecha y hora:** 2026-05-30 21:06:40
+**Fecha y hora:** 2026-05-31 01:28:22
 
 ```bash
 $ pwd
@@ -47,7 +47,7 @@ $ pwd
 
 ## Comando 3
 
-**Fecha y hora:** 2026-05-30 21:06:44
+**Fecha y hora:** 2026-05-31 01:28:24
 
 ```bash
 $ uname -a
@@ -64,7 +64,7 @@ Linux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 
 
 ## Comando 4
 
-**Fecha y hora:** 2026-05-30 21:06:46
+**Fecha y hora:** 2026-05-31 01:28:29
 
 ```bash
 $ uptime
@@ -73,14 +73,146 @@ $ uptime
 **Resultado obtenido:**
 
 ```
- 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00
+ 01:28:29 up  5:34,  2 users,  load average: 0,00, 0,01, 0,00
 
+```
+
+---
+
+## Comando 5
+
+**Fecha y hora:** 2026-05-31 01:28:31
+
+```bash
+$ df -h
+```
+
+**Resultado obtenido:**
+
+```
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              195M  1,1M  194M   1% /run
+efivarfs                           256K   63K  189K  25% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv   11G  6,8G  3,4G  67% /
+tmpfs                              975M     0  975M   0% /dev/shm
+tmpfs                              5,0M     0  5,0M   0% /run/lock
+/dev/sda2                          2,0G  201M  1,6G  11% /boot
+/dev/sda1                          1,1G  6,2M  1,1G   1% /boot/efi
+tmpfs                              195M   16K  195M   1% /run/user/1000
+
+```
+
+---
+
+## Comando 6
+
+**Fecha y hora:** 2026-05-31 01:28:34
+
+```bash
+$ free -h
+```
+
+**Resultado obtenido:**
+
+```
+               total        used        free      shared  buff/cache   available
+Mem:           1,9Gi       363Mi       794Mi       1,1Mi       948Mi       1,5Gi
+Swap:          2,0Gi          0B       2,0Gi
+
+```
+
+---
+
+## Comando 7
+
+**Fecha y hora:** 2026-05-31 01:28:37
+
+```bash
+$ ls -la
+```
+
+**Resultado obtenido:**
+
+```
+total 44
+drwxrwxr-x 2 steven steven  4096 may 31 01:28 .
+drwxrwxr-x 8 steven steven  4096 may 31 01:25 ..
+-rw-rw-r-- 1 steven steven  2579 may 30 20:08 captura_sesion.c
+-rw-rw-r-- 1 steven steven  1967 may 31 01:28 sesion.qmd
+-rwxrwxr-x 1 steven steven 17584 may 31 01:28 ShellDoc
+-rw-rw-r-- 1 steven steven  6672 may 30 20:05 ShellDoc.c
+
+```
+
+---
+
+## Comando 8
+
+**Fecha y hora:** 2026-05-31 01:28:39
+
+```bash
+$ ps aux
+```
+
+**Resultado obtenido:**
+
+```
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6  22320 13396 ?        Ss   may30   0:02 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    may30   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    may30   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    may30   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    may30   0:03 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    may30   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    may30   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    may30   0:03 [ksoftirqd/1]
+root          27  0.0  0.0      0     0 ?        S    may30   0:00 [kdevtmpfs]
+root          28  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-inet_]
+root          29  0.0  0.0      0     0 ?        S    may30   0:00 [kauditd]
+root          30  0.0  0.0      0     0 ?        S    may30   0:00 [khungtaskd]
+root          32  0.0  0.0      0     0 ?        S    may30   0:00 [oom_reaper]
+root          34  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-write]
+root          35  0.0  0.0      0     0 ?        S    may30   0:02 [kcompactd0]
+root          36  0.0  0.0      0     0 ?        SN   may30   0:00 [ksmd]
+root          38  0.0  0.0      0     0 ?        SN   may30   0:00 [khugepaged]
+root          39  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-kinte]
+root          40  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-kbloc]
+root          41  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-blkcg]
+root          42  0.0  0.0      0     0 ?        S    may30   0:00 [irq/9-acpi]
+root          43  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-tpm_d]
+root          44  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-ata_s]
+root          45  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-md]
+root          46  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-md_bi]
+root          47  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-edac-]
+root          48  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-devfr]
+root          49  0.0  0.0      0     0 ?        S    may30   0:00 [watchdogd]
+root          50  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-quota]
+root          52  0.0  0.0      0     0 ?        S    may30   0:00 [kswapd0]
+root          53  0.0  0.0      0     0 ?        S    may30   0:00 [ecryptfs-kthread]
+root          54  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-kthro]
+root          55  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-acpi_]
+root          56  0.0  0.0      0     0 ?        S    may30   0:00 [scsi_eh_0]
+root          57  0.0  0.0      0     0 ?        I<   may30   0:00 [kworker/R-scsi_]
+root          58  0.0  0.0    
 ```
 
 ---
 
 # Resumen de la sesion
 
-- Fecha de cierre: 2026-05-30 21:06:47
-- Total de comandos ejecutados: **4**
+- Fecha de cierre: 2026-05-31 01:28:42
+- Total de comandos ejecutados: **8**
 

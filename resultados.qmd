@@ -25,6 +25,15 @@ La demostración final registró:
 - ls -la
 - ps aux
 
+## Archivos Generados
+
+- sesion.qmd
+- sesion.html
+
+## Publicación Web
+
+La documentación generada fue publicada mediante GitHub Pages, permitiendo el acceso desde un navegador web.
+
 ## Conclusión
 
 El sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos.

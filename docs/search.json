@@ -4,28 +4,21 @@
     "href": "arquitectura.html",
     "title": "Arquitectura",
     "section": "",
-    "text": "ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.\nEl sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web.\n\n\n\nUsuario ↓ Comando Linux ↓ fork() ↓ Proceso hijo ejecuta el comando ↓ pthread registra la información ↓ Generación de sesion.qmd ↓ Quarto render ↓ sesion.html\n\n\n\n\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+    "text": "La arquitectura del sistema está compuesta por un conjunto de procesos, hilos y herramientas de documentación que permiten capturar comandos Linux y transformarlos en documentación web automática."
   },
   {
-    "objectID": "arquitectura.html#descripción-general",
-    "href": "arquitectura.html#descripción-general",
+    "objectID": "arquitectura.html#arquitectura-del-sistema",
+    "href": "arquitectura.html#arquitectura-del-sistema",
     "title": "Arquitectura",
     "section": "",
-    "text": "ShellDoc Web es una aplicación desarrollada en C que permite documentar automáticamente sesiones Linux.\nEl sistema utiliza procesos e hilos para ejecutar comandos, capturar resultados y generar documentación web."
+    "text": "La arquitectura del sistema está compuesta por un conjunto de procesos, hilos y herramientas de documentación que permiten capturar comandos Linux y transformarlos en documentación web automática."
   },
   {
     "objectID": "arquitectura.html#flujo-del-sistema",
     "href": "arquitectura.html#flujo-del-sistema",
     "title": "Arquitectura",
-    "section": "",
-    "text": "Usuario ↓ Comando Linux ↓ fork() ↓ Proceso hijo ejecuta el comando ↓ pthread registra la información ↓ Generación de sesion.qmd ↓ Quarto render ↓ sesion.html"
-  },
-  {
-    "objectID": "arquitectura.html#tecnologías-utilizadas",
-    "href": "arquitectura.html#tecnologías-utilizadas",
-    "title": "Arquitectura",
-    "section": "",
-    "text": "Lenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+    "section": "Flujo del Sistema",
+    "text": "Flujo del Sistema\nUsuario → Terminal Linux → ShellDoc.c → fork() → Proceso hijo → execl() → Ejecución del comando → pipe() + dup2() → Captura de salida → pthread → sesion.qmd → Quarto Render → sesion.html → GitHub Pages → Página Web"
   },
   {
     "objectID": "about.html",
@@ -95,35 +88,63 @@
     "href": "codigo/sesion.html",
     "title": "Documentacion de Sesion Linux",
     "section": "",
-    "text": "Documento generado automaticamente por el sistema ShellDoc.\n\n\n\nFecha y hora: 2026-05-30 21:06:37\n$ whoami\nResultado obtenido:\nsteven\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:40\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:44\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n\n\n\n\n\nFecha y hora: 2026-05-30 21:06:46\n$ uptime\nResultado obtenido:\n 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00"
+    "text": "Documento generado automaticamente por el sistema ShellDoc.\n\n\n\nFecha y hora: 2026-05-31 01:28:19\n$ whoami\nResultado obtenido:\nsteven\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:22\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:24\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:29\n$ uptime\nResultado obtenido:\n 01:28:29 up  5:34,  2 users,  load average: 0,00, 0,01, 0,00\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:31\n$ df -h\nResultado obtenido:\nFilesystem                         Size  Used Avail Use% Mounted on\ntmpfs                              195M  1,1M  194M   1% /run\nefivarfs                           256K   63K  189K  25% /sys/firmware/efi/efivars\n/dev/mapper/ubuntu--vg-ubuntu--lv   11G  6,8G  3,4G  67% /\ntmpfs                              975M     0  975M   0% /dev/shm\ntmpfs                              5,0M     0  5,0M   0% /run/lock\n/dev/sda2                          2,0G  201M  1,6G  11% /boot\n/dev/sda1                          1,1G  6,2M  1,1G   1% /boot/efi\ntmpfs                              195M   16K  195M   1% /run/user/1000\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:34\n$ free -h\nResultado obtenido:\n               total        used        free      shared  buff/cache   available\nMem:           1,9Gi       363Mi       794Mi       1,1Mi       948Mi       1,5Gi\nSwap:          2,0Gi          0B       2,0Gi\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:37\n$ ls -la\nResultado obtenido:\ntotal 44\ndrwxrwxr-x 2 steven steven  4096 may 31 01:28 .\ndrwxrwxr-x 8 steven steven  4096 may 31 01:25 ..\n-rw-rw-r-- 1 steven steven  2579 may 30 20:08 captura_sesion.c\n-rw-rw-r-- 1 steven steven  1967 may 31 01:28 sesion.qmd\n-rwxrwxr-x 1 steven steven 17584 may 31 01:28 ShellDoc\n-rw-rw-r-- 1 steven steven  6672 may 30 20:05 ShellDoc.c\n\n\n\n\n\nFecha y hora: 2026-05-31 01:28:39\n$ ps aux\nResultado obtenido:\nUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\nroot           1  0.0  0.6  22320 13396 ?        Ss   may30   0:02 /sbin/init\nroot           2  0.0  0.0      0     0 ?        S    may30   0:00 [kthreadd]\nroot           3  0.0  0.0      0     0 ?        S    may30   0:00 [pool_workqueue_release]\nroot           4  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-rcu_g]\nroot           5  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-rcu_p]\nroot           6  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-slub_]\nroot           7  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-netns]\nroot          10  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/0:0H-events_highpri]\nroot          12  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-mm_pe]\nroot          13  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_kthread]\nroot          14  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_rude_kthread]\nroot          15  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_trace_kthread]\nroot          16  0.0  0.0      0     0 ?        S    may30   0:00 [ksoftirqd/0]\nroot          17  0.0  0.0      0     0 ?        I    may30   0:03 [rcu_preempt]\nroot          18  0.0  0.0      0     0 ?        S    may30   0:00 [migration/0]\nroot          19  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/0]\nroot          20  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/0]\nroot          21  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/1]\nroot          22  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/1]\nroot          23  0.0  0.0      0     0 ?        S    may30   0:00 [migration/1]\nroot          24  0.0  0.0      0     0 ?        S    may30   0:03 [ksoftirqd/1]\nroot          27  0.0  0.0      0     0 ?        S    may30   0:00 [kdevtmpfs]\nroot          28  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-inet_]\nroot          29  0.0  0.0      0     0 ?        S    may30   0:00 [kauditd]\nroot          30  0.0  0.0      0     0 ?        S    may30   0:00 [khungtaskd]\nroot          32  0.0  0.0      0     0 ?        S    may30   0:00 [oom_reaper]\nroot          34  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-write]\nroot          35  0.0  0.0      0     0 ?        S    may30   0:02 [kcompactd0]\nroot          36  0.0  0.0      0     0 ?        SN   may30   0:00 [ksmd]\nroot          38  0.0  0.0      0     0 ?        SN   may30   0:00 [khugepaged]\nroot          39  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kinte]\nroot          40  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kbloc]\nroot          41  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-blkcg]\nroot          42  0.0  0.0      0     0 ?        S    may30   0:00 [irq/9-acpi]\nroot          43  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-tpm_d]\nroot          44  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-ata_s]\nroot          45  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-md]\nroot          46  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-md_bi]\nroot          47  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-edac-]\nroot          48  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-devfr]\nroot          49  0.0  0.0      0     0 ?        S    may30   0:00 [watchdogd]\nroot          50  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-quota]\nroot          52  0.0  0.0      0     0 ?        S    may30   0:00 [kswapd0]\nroot          53  0.0  0.0      0     0 ?        S    may30   0:00 [ecryptfs-kthread]\nroot          54  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kthro]\nroot          55  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-acpi_]\nroot          56  0.0  0.0      0     0 ?        S    may30   0:00 [scsi_eh_0]\nroot          57  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-scsi_]\nroot          58  0.0  0.0"
   },
   {
     "objectID": "codigo/sesion.html#comando-1",
     "href": "codigo/sesion.html#comando-1",
     "title": "Documentacion de Sesion Linux",
     "section": "",
-    "text": "Fecha y hora: 2026-05-30 21:06:37\n$ whoami\nResultado obtenido:\nsteven"
+    "text": "Fecha y hora: 2026-05-31 01:28:19\n$ whoami\nResultado obtenido:\nsteven"
   },
   {
     "objectID": "codigo/sesion.html#comando-2",
     "href": "codigo/sesion.html#comando-2",
     "title": "Documentacion de Sesion Linux",
     "section": "",
-    "text": "Fecha y hora: 2026-05-30 21:06:40\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo"
+    "text": "Fecha y hora: 2026-05-31 01:28:22\n$ pwd\nResultado obtenido:\n/home/steven/ShellDocWeb/codigo"
   },
   {
     "objectID": "codigo/sesion.html#comando-3",
     "href": "codigo/sesion.html#comando-3",
     "title": "Documentacion de Sesion Linux",
     "section": "",
-    "text": "Fecha y hora: 2026-05-30 21:06:44\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+    "text": "Fecha y hora: 2026-05-31 01:28:24\n$ uname -a\nResultado obtenido:\nLinux stevenserver 6.8.0-117-generic #117-Ubuntu SMP PREEMPT_DYNAMIC Tue May  5 19:26:24 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
   },
   {
     "objectID": "codigo/sesion.html#comando-4",
     "href": "codigo/sesion.html#comando-4",
     "title": "Documentacion de Sesion Linux",
     "section": "",
-    "text": "Fecha y hora: 2026-05-30 21:06:46\n$ uptime\nResultado obtenido:\n 21:06:46 up  1:12,  2 users,  load average: 0,00, 0,00, 0,00"
+    "text": "Fecha y hora: 2026-05-31 01:28:29\n$ uptime\nResultado obtenido:\n 01:28:29 up  5:34,  2 users,  load average: 0,00, 0,01, 0,00"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-5",
+    "href": "codigo/sesion.html#comando-5",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-31 01:28:31\n$ df -h\nResultado obtenido:\nFilesystem                         Size  Used Avail Use% Mounted on\ntmpfs                              195M  1,1M  194M   1% /run\nefivarfs                           256K   63K  189K  25% /sys/firmware/efi/efivars\n/dev/mapper/ubuntu--vg-ubuntu--lv   11G  6,8G  3,4G  67% /\ntmpfs                              975M     0  975M   0% /dev/shm\ntmpfs                              5,0M     0  5,0M   0% /run/lock\n/dev/sda2                          2,0G  201M  1,6G  11% /boot\n/dev/sda1                          1,1G  6,2M  1,1G   1% /boot/efi\ntmpfs                              195M   16K  195M   1% /run/user/1000"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-6",
+    "href": "codigo/sesion.html#comando-6",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-31 01:28:34\n$ free -h\nResultado obtenido:\n               total        used        free      shared  buff/cache   available\nMem:           1,9Gi       363Mi       794Mi       1,1Mi       948Mi       1,5Gi\nSwap:          2,0Gi          0B       2,0Gi"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-7",
+    "href": "codigo/sesion.html#comando-7",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-31 01:28:37\n$ ls -la\nResultado obtenido:\ntotal 44\ndrwxrwxr-x 2 steven steven  4096 may 31 01:28 .\ndrwxrwxr-x 8 steven steven  4096 may 31 01:25 ..\n-rw-rw-r-- 1 steven steven  2579 may 30 20:08 captura_sesion.c\n-rw-rw-r-- 1 steven steven  1967 may 31 01:28 sesion.qmd\n-rwxrwxr-x 1 steven steven 17584 may 31 01:28 ShellDoc\n-rw-rw-r-- 1 steven steven  6672 may 30 20:05 ShellDoc.c"
+  },
+  {
+    "objectID": "codigo/sesion.html#comando-8",
+    "href": "codigo/sesion.html#comando-8",
+    "title": "Documentacion de Sesion Linux",
+    "section": "",
+    "text": "Fecha y hora: 2026-05-31 01:28:39\n$ ps aux\nResultado obtenido:\nUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\nroot           1  0.0  0.6  22320 13396 ?        Ss   may30   0:02 /sbin/init\nroot           2  0.0  0.0      0     0 ?        S    may30   0:00 [kthreadd]\nroot           3  0.0  0.0      0     0 ?        S    may30   0:00 [pool_workqueue_release]\nroot           4  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-rcu_g]\nroot           5  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-rcu_p]\nroot           6  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-slub_]\nroot           7  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-netns]\nroot          10  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/0:0H-events_highpri]\nroot          12  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-mm_pe]\nroot          13  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_kthread]\nroot          14  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_rude_kthread]\nroot          15  0.0  0.0      0     0 ?        I    may30   0:00 [rcu_tasks_trace_kthread]\nroot          16  0.0  0.0      0     0 ?        S    may30   0:00 [ksoftirqd/0]\nroot          17  0.0  0.0      0     0 ?        I    may30   0:03 [rcu_preempt]\nroot          18  0.0  0.0      0     0 ?        S    may30   0:00 [migration/0]\nroot          19  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/0]\nroot          20  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/0]\nroot          21  0.0  0.0      0     0 ?        S    may30   0:00 [cpuhp/1]\nroot          22  0.0  0.0      0     0 ?        S    may30   0:00 [idle_inject/1]\nroot          23  0.0  0.0      0     0 ?        S    may30   0:00 [migration/1]\nroot          24  0.0  0.0      0     0 ?        S    may30   0:03 [ksoftirqd/1]\nroot          27  0.0  0.0      0     0 ?        S    may30   0:00 [kdevtmpfs]\nroot          28  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-inet_]\nroot          29  0.0  0.0      0     0 ?        S    may30   0:00 [kauditd]\nroot          30  0.0  0.0      0     0 ?        S    may30   0:00 [khungtaskd]\nroot          32  0.0  0.0      0     0 ?        S    may30   0:00 [oom_reaper]\nroot          34  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-write]\nroot          35  0.0  0.0      0     0 ?        S    may30   0:02 [kcompactd0]\nroot          36  0.0  0.0      0     0 ?        SN   may30   0:00 [ksmd]\nroot          38  0.0  0.0      0     0 ?        SN   may30   0:00 [khugepaged]\nroot          39  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kinte]\nroot          40  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kbloc]\nroot          41  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-blkcg]\nroot          42  0.0  0.0      0     0 ?        S    may30   0:00 [irq/9-acpi]\nroot          43  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-tpm_d]\nroot          44  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-ata_s]\nroot          45  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-md]\nroot          46  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-md_bi]\nroot          47  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-edac-]\nroot          48  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-devfr]\nroot          49  0.0  0.0      0     0 ?        S    may30   0:00 [watchdogd]\nroot          50  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-quota]\nroot          52  0.0  0.0      0     0 ?        S    may30   0:00 [kswapd0]\nroot          53  0.0  0.0      0     0 ?        S    may30   0:00 [ecryptfs-kthread]\nroot          54  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-kthro]\nroot          55  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-acpi_]\nroot          56  0.0  0.0      0     0 ?        S    may30   0:00 [scsi_eh_0]\nroot          57  0.0  0.0      0     0 ?        I&lt;   may30   0:00 [kworker/R-scsi_]\nroot          58  0.0  0.0"
   },
   {
     "objectID": "index.html",
@@ -179,7 +200,7 @@
     "href": "resultados.html",
     "title": "Resultados",
     "section": "",
-    "text": "La demostración final registró:\n\n8 comandos Linux ejecutados.\nFecha y hora de cada comando.\nSalida completa de cada ejecución.\nGeneración automática de documentación.\nConversión automática a HTML mediante Quarto.\n\n\n\n\n\nwhoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux\n\n\n\n\nEl sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos."
+    "text": "La demostración final registró:\n\n8 comandos Linux ejecutados.\nFecha y hora de cada comando.\nSalida completa de cada ejecución.\nGeneración automática de documentación.\nConversión automática a HTML mediante Quarto.\n\n\n\n\n\nwhoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux\n\n\n\n\n\nsesion.qmd\nsesion.html\n\n\n\n\nLa documentación generada fue publicada mediante GitHub Pages, permitiendo el acceso desde un navegador web.\n\n\n\nEl sistema ShellDoc Web cumplió con el objetivo de automatizar la documentación de sesiones Linux mediante el uso de procesos e hilos en lenguaje C. Además, la integración con Quarto permitió generar documentación web de forma automática, facilitando la publicación y consulta de los resultados obtenidos."
   },
   {
     "objectID": "resultados.html#resumen-de-la-sesión-generada",
@@ -194,6 +215,20 @@
     "title": "Resultados",
     "section": "",
     "text": "whoami\npwd\nuname -a\nuptime\ndf -h\nfree -h\nls -la\nps aux"
+  },
+  {
+    "objectID": "resultados.html#archivos-generados",
+    "href": "resultados.html#archivos-generados",
+    "title": "Resultados",
+    "section": "",
+    "text": "sesion.qmd\nsesion.html"
+  },
+  {
+    "objectID": "resultados.html#publicación-web",
+    "href": "resultados.html#publicación-web",
+    "title": "Resultados",
+    "section": "",
+    "text": "La documentación generada fue publicada mediante GitHub Pages, permitiendo el acceso desde un navegador web."
   },
   {
     "objectID": "resultados.html#conclusión",
