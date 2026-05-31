@@ -1,20 +1,20 @@
 {
-  "index.qmd": {
-    "index.html": "da6ba518"
-  },
-  "about.qmd": {
-    "about.html": "bdbd2b10"
-  },
   "codigo/sesion.qmd": {
-    "sesion.html": "340ad277"
+    "sesion.html": "fbc86586"
   },
   "evidencias.qmd": {
-    "evidencias.html": "279b4a07"
+    "evidencias.html": "a65866db"
+  },
+  "index.qmd": {
+    "index.html": "30167360"
+  },
+  "about.qmd": {
+    "about.html": "098fcc0c"
   },
   "resultados.qmd": {
-    "resultados.html": "85bf5a41"
+    "resultados.html": "b70742ba"
   },
   "arquitectura.qmd": {
-    "arquitectura.html": "993c90e7"
+    "arquitectura.html": "1b363454"
   }
 }
