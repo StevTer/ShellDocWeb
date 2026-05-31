@@ -165,7 +165,21 @@
     "href": "index.html#descripción",
     "title": "ShellDoc Web",
     "section": "Descripción",
-    "text": "Descripción\nShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto.\n##Objetivo General\nDesarrollar una herramienta en lenguaje C capaz de documentar automáticamente sesiones Linux, registrando comandos y resultados para generar documentación web mediante Quarto.\n##Objetivos Específicos - Ejecutar comandos Linux utilizando procesos creados con fork(). - Capturar automáticamente la salida de los comandos mediante pipes y redirección de flujo. - Implementar hilos (pthread) para registrar concurrentemente la información generada. - Generar documentación automática en formato Quarto (.qmd) a partir de la sesión capturada. - Convertir la documentación a HTML y publicarla mediante GitHub Pages."
+    "text": "Descripción\nShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto."
+  },
+  {
+    "objectID": "index.html#objetivo-general",
+    "href": "index.html#objetivo-general",
+    "title": "ShellDoc Web",
+    "section": "Objetivo General",
+    "text": "Objetivo General\nDesarrollar una herramienta en lenguaje C capaz de documentar automáticamente sesiones Linux, registrando comandos y resultados para generar documentación web mediante Quarto."
+  },
+  {
+    "objectID": "index.html#objetivos-específicos",
+    "href": "index.html#objetivos-específicos",
+    "title": "ShellDoc Web",
+    "section": "Objetivos Específicos",
+    "text": "Objetivos Específicos\n\nEjecutar comandos Linux utilizando procesos creados con fork().\nCapturar automáticamente la salida de los comandos mediante pipes y redirección de flujo.\nImplementar hilos (pthread) para registrar concurrentemente la información generada.\nGenerar documentación automática en formato Quarto (.qmd) a partir de la sesión capturada.\nConvertir la documentación a HTML y publicarla mediante GitHub Pages."
   },
   {
     "objectID": "index.html#tecnologías-utilizadas",
