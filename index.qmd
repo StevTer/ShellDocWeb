@@ -12,11 +12,11 @@ title: "ShellDoc Web"
 
 ShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (`fork()`), hilos (`pthread`) y generación de documentación con Quarto.
 
-##Objetivo General
+## Objetivo General
 
 Desarrollar una herramienta en lenguaje C capaz de documentar automáticamente sesiones Linux, registrando comandos y resultados para generar documentación web mediante Quarto.
 
-##Objetivos Específicos
+## Objetivos Específicos
 - Ejecutar comandos Linux utilizando procesos creados con fork().
 - Capturar automáticamente la salida de los comandos mediante pipes y redirección de flujo.
 - Implementar hilos (pthread) para registrar concurrentemente la información generada.
