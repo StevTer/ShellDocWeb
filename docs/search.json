@@ -151,7 +151,7 @@
     "href": "index.html",
     "title": "ShellDoc Web",
     "section": "",
-    "text": "Karen Grefa\nSteven Arauz\nGeovanni Casa\n\n\n\n\nShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto.\n\n\n\nAutomatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática.\n\n\n\n\nLinux\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages\n\n\n\n\n\nEjecución de comandos Linux.\nCaptura automática de resultados.\nProcesamiento concurrente mediante hilos.\nGeneración de archivos .qmd.\nConversión automática a HTML.\nPublicación web mediante GitHub Pages.\n\n\n\n\nUtilice el menú superior para acceder a:\n\nArquitectura\nEvidencias\nResultados\nSesión Generada"
+    "text": "Karen Grefa\nSteven Arauz\nGeovanni Casa"
   },
   {
     "objectID": "index.html#integrantes",
@@ -164,36 +164,36 @@
     "objectID": "index.html#descripción",
     "href": "index.html#descripción",
     "title": "ShellDoc Web",
-    "section": "",
-    "text": "ShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto."
+    "section": "Descripción",
+    "text": "Descripción\nShellDoc Web es una herramienta desarrollada en lenguaje C que permite documentar automáticamente sesiones Linux utilizando procesos (fork()), hilos (pthread) y generación de documentación con Quarto."
   },
   {
     "objectID": "index.html#objetivo-general",
     "href": "index.html#objetivo-general",
     "title": "ShellDoc Web",
-    "section": "",
-    "text": "Automatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática."
+    "section": "Objetivo General",
+    "text": "Objetivo General\nAutomatizar el registro y documentación de comandos ejecutados en Linux, generando documentación web de manera automática."
   },
   {
     "objectID": "index.html#tecnologías-utilizadas",
     "href": "index.html#tecnologías-utilizadas",
     "title": "ShellDoc Web",
-    "section": "",
-    "text": "Linux\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
+    "section": "Tecnologías Utilizadas",
+    "text": "Tecnologías Utilizadas\n\nLinux\nLenguaje C\nfork()\npthread\nMutex\nQuarto\nGitHub Pages"
   },
   {
     "objectID": "index.html#funcionalidades",
     "href": "index.html#funcionalidades",
     "title": "ShellDoc Web",
-    "section": "",
-    "text": "Ejecución de comandos Linux.\nCaptura automática de resultados.\nProcesamiento concurrente mediante hilos.\nGeneración de archivos .qmd.\nConversión automática a HTML.\nPublicación web mediante GitHub Pages."
+    "section": "Funcionalidades",
+    "text": "Funcionalidades\n\nEjecución de comandos Linux.\nCaptura automática de resultados.\nProcesamiento concurrente mediante hilos.\nGeneración de archivos .qmd.\nConversión automática a HTML.\nPublicación web mediante GitHub Pages."
   },
   {
     "objectID": "index.html#navegación",
     "href": "index.html#navegación",
     "title": "ShellDoc Web",
-    "section": "",
-    "text": "Utilice el menú superior para acceder a:\n\nArquitectura\nEvidencias\nResultados\nSesión Generada"
+    "section": "Navegación",
+    "text": "Navegación\nUtilice el menú superior para acceder a:\n\nArquitectura\nEvidencias\nResultados\nSesión Generada"
   },
   {
     "objectID": "resultados.html",
