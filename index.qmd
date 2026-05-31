@@ -2,8 +2,6 @@
 title: "ShellDoc Web"
 ---
 
-# ShellDoc Web
-
 ## Integrantes
 
 - Karen Grefa
