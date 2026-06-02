@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Karen Grefa, Steven Arauz, Geovanni Casa">
-<meta name="dcterms.date" content="2026-05-31">
+<meta name="dcterms.date" content="2026-06-02">
 
 <title>Documentacion de Sesion Linux – Documentacion de Sesiones Linux con Quarto, Hilos y Procesos en C</title>
 <style>
@@ -166,12 +166,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#comando-1" id="toc-comando-1" class="nav-link" data-scroll-target="#comando-1">Comando 1</a></li>
   <li><a href="#comando-2" id="toc-comando-2" class="nav-link" data-scroll-target="#comando-2">Comando 2</a></li>
-  <li><a href="#comando-3" id="toc-comando-3" class="nav-link" data-scroll-target="#comando-3">Comando 3</a></li>
-  <li><a href="#comando-4" id="toc-comando-4" class="nav-link" data-scroll-target="#comando-4">Comando 4</a></li>
-  <li><a href="#comando-5" id="toc-comando-5" class="nav-link" data-scroll-target="#comando-5">Comando 5</a></li>
-  <li><a href="#comando-6" id="toc-comando-6" class="nav-link" data-scroll-target="#comando-6">Comando 6</a></li>
-  <li><a href="#comando-7" id="toc-comando-7" class="nav-link" data-scroll-target="#comando-7">Comando 7</a></li>
-  <li><a href="#comando-8" id="toc-comando-8" class="nav-link" data-scroll-target="#comando-8">Comando 8</a></li>
   </ul></li>
   <li><a href="#resumen-de-la-sesion" id="toc-resumen-de-la-sesion" class="nav-link" data-scroll-target="#resumen-de-la-sesion">Resumen de la sesion</a></li>
   </ul>
@@ -199,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 31, 2026</p>
+      <p class="date">June 2, 2026</p>
     </div>
   </div>
   
@@ -217,144 +211,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 <section id="comando-1" class="level2">
 <h2 class="anchored" data-anchor-id="comando-1">Comando 1</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:24</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> whoami</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Fecha y hora:</strong> 2026-06-02 13:07:54</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Resultado obtenido:</strong></p>
-<pre><code>steven
+<pre><code>captura_sesion.c
+sesion.qmd
+ShellDoc
+ShellDoc.c
 </code></pre>
 <hr>
 </section>
 <section id="comando-2" class="level2">
 <h2 class="anchored" data-anchor-id="comando-2">Comando 2</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:27</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pwd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Fecha y hora:</strong> 2026-06-02 13:07:55</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Resultado obtenido:</strong></p>
-<pre><code>/home/steven/ShellDocWeb/codigo
+<pre><code>    PID TTY          TIME CMD
+   1066 pts/0    00:00:00 bash
+   1136 pts/0    00:00:00 ShellDoc
+   1141 pts/0    00:00:00 sh
+   1142 pts/0    00:00:00 ps
 </code></pre>
-<hr>
-</section>
-<section id="comando-3" class="level2">
-<h2 class="anchored" data-anchor-id="comando-3">Comando 3</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:30</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> uname-a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code>sh: 1: </code></pre>
-<hr>
-</section>
-<section id="comando-4" class="level2">
-<h2 class="anchored" data-anchor-id="comando-4">Comando 4</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:33</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> uptime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code> 15:32:33 up 1 min,  2 users,  load average: 0,15, 0,09, 0,03
-</code></pre>
-<hr>
-</section>
-<section id="comando-5" class="level2">
-<h2 class="anchored" data-anchor-id="comando-5">Comando 5</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:46</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> df <span class="at">-h</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code>Filesystem                         Size  Used Avail Use% Mounted on
-tmpfs                              195M  1,1M  194M   1% /run
-efivarfs                           256K   72K  180K  29% /sys/firmware/efi/efivars
-/dev/mapper/ubuntu--vg-ubuntu--lv   11G  6,9G  3,4G  68% /
-tmpfs                              975M     0  975M   0% /dev/shm
-tmpfs                              5,0M     0  5,0M   0% /run/lock
-/dev/sda2                          2,0G  201M  1,6G  11% /boot
-/dev/sda1                          1,1G  6,2M  1,1G   1% /boot/efi
-tmpfs                              195M   16K  195M   1% /run/user/1000
-</code></pre>
-<hr>
-</section>
-<section id="comando-6" class="level2">
-<h2 class="anchored" data-anchor-id="comando-6">Comando 6</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:49</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> free <span class="at">-h</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code>               total        used        free      shared  buff/cache   available
-Mem:           1,9Gi       321Mi       1,5Gi       1,1Mi       230Mi       1,6Gi
-Swap:          2,0Gi          0B       2,0Gi
-</code></pre>
-<hr>
-</section>
-<section id="comando-7" class="level2">
-<h2 class="anchored" data-anchor-id="comando-7">Comando 7</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:55</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-la</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code>total 44
-drwxrwxr-x 2 steven steven  4096 may 31 02:22 .
-drwxrwxr-x 8 steven steven  4096 may 31 02:32 ..
--rw-rw-r-- 1 steven steven  2579 may 30 20:08 captura_sesion.c
--rw-rw-r-- 1 steven steven  1844 may 31 15:32 sesion.qmd
--rwxrwxr-x 1 steven steven 17584 may 31 01:28 ShellDoc
--rw-rw-r-- 1 steven steven  6672 may 30 20:05 ShellDoc.c
-</code></pre>
-<hr>
-</section>
-<section id="comando-8" class="level2">
-<h2 class="anchored" data-anchor-id="comando-8">Comando 8</h2>
-<p><strong>Fecha y hora:</strong> 2026-05-31 15:32:56</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ps aux</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Resultado obtenido:</strong></p>
-<pre><code>USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root           1  1.6  0.6  22100 13356 ?        Ss   15:31   0:01 /sbin/init
-root           2  0.0  0.0      0     0 ?        S    15:31   0:00 [kthreadd]
-root           3  0.0  0.0      0     0 ?        S    15:31   0:00 [pool_workqueue_release]
-root           4  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-rcu_g]
-root           5  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-rcu_p]
-root           6  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-slub_]
-root           7  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-netns]
-root           8  0.0  0.0      0     0 ?        I    15:31   0:00 [kworker/0:0-events]
-root           9  0.3  0.0      0     0 ?        I    15:31   0:00 [kworker/0:1-events]
-root          10  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/0:0H-events_highpri]
-root          11  0.7  0.0      0     0 ?        I    15:31   0:00 [kworker/u4:0-events_power_efficient]
-root          12  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-mm_pe]
-root          13  0.0  0.0      0     0 ?        I    15:31   0:00 [rcu_tasks_kthread]
-root          14  0.0  0.0      0     0 ?        I    15:31   0:00 [rcu_tasks_rude_kthread]
-root          15  0.0  0.0      0     0 ?        I    15:31   0:00 [rcu_tasks_trace_kthread]
-root          16  0.0  0.0      0     0 ?        S    15:31   0:00 [ksoftirqd/0]
-root          17  0.2  0.0      0     0 ?        I    15:31   0:00 [rcu_preempt]
-root          18  0.0  0.0      0     0 ?        S    15:31   0:00 [migration/0]
-root          19  0.0  0.0      0     0 ?        S    15:31   0:00 [idle_inject/0]
-root          20  0.0  0.0      0     0 ?        S    15:31   0:00 [cpuhp/0]
-root          21  0.0  0.0      0     0 ?        S    15:31   0:00 [cpuhp/1]
-root          22  0.0  0.0      0     0 ?        S    15:31   0:00 [idle_inject/1]
-root          23  0.1  0.0      0     0 ?        S    15:31   0:00 [migration/1]
-root          24  0.1  0.0      0     0 ?        S    15:31   0:00 [ksoftirqd/1]
-root          25  0.0  0.0      0     0 ?        I    15:31   0:00 [kworker/1:0-events]
-root          26  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/1:0H-events_highpri]
-root          27  0.0  0.0      0     0 ?        S    15:31   0:00 [kdevtmpfs]
-root          28  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-inet_]
-root          29  0.0  0.0      0     0 ?        S    15:31   0:00 [kauditd]
-root          30  0.0  0.0      0     0 ?        S    15:31   0:00 [khungtaskd]
-root          31  0.0  0.0      0     0 ?        I    15:31   0:00 [kworker/u4:1-events_unbound]
-root          32  0.0  0.0      0     0 ?        S    15:31   0:00 [oom_reaper]
-root          33  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-write]
-root          34  0.1  0.0      0     0 ?        I    15:31   0:00 [kworker/u4:2-events_unbound]
-root          35  0.0  0.0      0     0 ?        S    15:31   0:00 [kcompactd0]
-root          36  0.0  0.0      0     0 ?        SN   15:31   0:00 [ksmd]
-root          37  0.0  0.0      0     0 ?        I    15:31   0:00 [kworker/1:1-rcu_gp]
-root          38  0.0  0.0      0     0 ?        SN   15:31   0:00 [khugepaged]
-root          39  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-kinte]
-root          40  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-kbloc]
-root          41  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-blkcg]
-root          42  0.0  0.0      0     0 ?        S    15:31   0:00 [irq/9-acpi]
-root          43  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-tpm_d]
-root          44  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-ata_s]
-root          45  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-md]
-root          46  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-md_bi]
-root          47  0.0  0.0      0     0 ?        I&lt;   15:31   0:00 [kworker/R-edac-]
-root          48  0.0  0.0  </code></pre>
 <hr>
 </section>
 </section>
 <section id="resumen-de-la-sesion" class="level1">
 <h1>Resumen de la sesion</h1>
 <ul>
-<li>Fecha de cierre: 2026-05-31 15:32:59</li>
-<li>Total de comandos ejecutados: <strong>8</strong></li>
+<li>Fecha de cierre: 2026-06-02 13:07:59</li>
+<li>Total de comandos ejecutados: <strong>2</strong></li>
 </ul>
 
 
